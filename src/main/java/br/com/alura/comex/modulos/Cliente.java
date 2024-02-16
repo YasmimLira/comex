@@ -1,59 +1,27 @@
 package br.com.alura.comex.modulos;
 
-public class Cliente {
+public class Cliente extends Endereco {
+    public String nome;
+    public String cpf;
+    public String email;
+    public String profissao;
+    public String telefone;
+    public Endereco endereco;
 
-    private String nome;
-    private String cpf;
-    private String email;
-    private String profissao;
-    private String telefone;
-    private Endereco endereco;
-
-    public String getNome() {
-        return nome;
+    public void imprimirCliente() {
+        System.out.println("Nome: " + nome + "\nCPF: " + cpf + "\nEmail: " + email + "\nProfissão: " + profissao
+                + "\nTelefone: " + telefone + "\nEndereco: " + endereco + "\n");
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getProfissao() {
-        return profissao;
-    }
-
-    public void setProfissao(String profissao) {
-        this.profissao = profissao;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\n' +
+                ", cpf='" + cpf + '\n' +
+                ", email='" + email + '\n' +
+                ", profissao='" + profissao + '\n' +
+                ", telefone='" + telefone + '\n' +
+                ", endereco=" + endereco +
+                '}';
     }
 }
