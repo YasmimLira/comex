@@ -1,8 +1,8 @@
 package br.com.alura.comex;
 
-import br.com.alura.comex.modulos.Pedido;
-import  br.com.alura.comex.modulos.Cliente;
-import br.com.alura.comex.modulos.Produto;
+import br.com.alura.comex.models.Pedido;
+import  br.com.alura.comex.models.Cliente;
+import br.com.alura.comex.models.Produto;
 public class TestPedido {
         public static void main(String[] args) {
             Cliente novoCliente = new Cliente();

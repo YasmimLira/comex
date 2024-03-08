@@ -1,7 +1,7 @@
 package br.com.alura.comex;
 
-import br.com.alura.comex.modulos.Pedido;
-import  br.com.alura.comex.modulos.Cliente;
+import br.com.alura.comex.models.Pedido;
+import  br.com.alura.comex.models.Cliente;
 import java.util.ArrayList;
 import java.util.Comparator;
 public class TestPedidoOrden {

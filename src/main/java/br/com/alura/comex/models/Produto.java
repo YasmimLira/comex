@@ -1,6 +1,4 @@
-package br.com.alura.comex.modulos;
-
-import java.math.BigDecimal;
+package br.com.alura.comex.models;
 
 public class Produto {
     private String nome;

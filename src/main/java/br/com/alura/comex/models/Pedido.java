@@ -1,4 +1,4 @@
-package br.com.alura.comex.modulos;
+package br.com.alura.comex.models;
 
 import java.math.BigDecimal;
 
