@@ -1,6 +1,6 @@
 package br.com.alura.comex.executables;
 
-import br.com.alura.comex.models.Endereco;
+import br.com.alura.comex.models.Address;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -33,8 +33,8 @@ public class TestIntegrationCEP {
             String s = response.body();
             Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.IDENTITY).create();
             TranslateAPI api = gson.fromJson(s, TranslateAPI.class);
-            Endereco endereco_1 = new Endereco(api);
-            System.out.println(endereco_1);
+            Address address_1 = new Address(api);
+            System.out.println(address_1);
 
         }catch (Exception e){
             System.out.println("Erro de API");

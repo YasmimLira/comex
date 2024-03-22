@@ -2,7 +2,7 @@ package br.com.alura.comex.models;
 
 import br.com.alura.comex.executables.TranslateAPI;
 
-public class Endereco {
+public class Address {
     public String nome;
     public String cep;
     public String bairro;
@@ -12,7 +12,7 @@ public class Endereco {
     public String rua;
     public int numero;
 
-    public Endereco(TranslateAPI api) {
+    public Address(TranslateAPI api) {
         this.bairro = api.bairro();
         this.cidade = api.localidade();
         this.complemento = api.complemento();

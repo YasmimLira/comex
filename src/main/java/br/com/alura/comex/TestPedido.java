@@ -1,17 +1,17 @@
 package br.com.alura.comex;
 
 import br.com.alura.comex.models.Pedido;
-import  br.com.alura.comex.models.Cliente;
+import br.com.alura.comex.models.Client;
 import br.com.alura.comex.models.Produto;
 public class TestPedido {
         public static void main(String[] args) {
-            Cliente novoCliente = new Cliente();
+            Client novoCliente = new Client();
             novoCliente.nome = "Patricia";
             novoCliente.cpf = "123.456.789-5";
             novoCliente.email = "juliane@gmail.com";
             novoCliente.profissao = "Contadora";
             novoCliente.telefone = "(11)3232-3434";
-            novoCliente.endereco = null;
+            novoCliente.address = null;
 
             Produto novoProduto = new Produto();
             novoProduto.setNome("Detergente");

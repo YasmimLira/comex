@@ -1,9 +1,7 @@
 package br.com.alura.comex;
 
-import br.com.alura.comex.executables.TranslateAPI;
 import br.com.alura.comex.models.Produto;
-import br.com.alura.comex.models.Endereco;
-import br.com.alura.comex.models.Cliente;
+import br.com.alura.comex.models.Client;
 public class Actives {
 
     public static void main(String[] args) {
@@ -37,7 +35,7 @@ public class Actives {
 
 
 
-        Cliente cliente1 = new Cliente();
+        Client cliente1 = new Client();
         cliente1.nome = "Mariana";
         cliente1.cpf = "123.456.789-5";
         cliente1.email = "mariana@gmail.com";

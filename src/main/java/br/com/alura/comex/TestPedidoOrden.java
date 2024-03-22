@@ -1,18 +1,18 @@
 package br.com.alura.comex;
 
 import br.com.alura.comex.models.Pedido;
-import  br.com.alura.comex.models.Cliente;
+import br.com.alura.comex.models.Client;
 import java.util.ArrayList;
 import java.util.Comparator;
 public class TestPedidoOrden {
     public static void main(String[] args) {
-        Cliente novoCliente = new Cliente();
+        Client novoCliente = new Client();
         novoCliente.nome = "Patricia";
         novoCliente.cpf = "123.456.789-5";
         novoCliente.email = "juliane@gmail.com";
         novoCliente.profissao = "Contadora";
         novoCliente.telefone = "(11)3232-3434";
-        novoCliente.endereco = null;
+        novoCliente.address = null;
 
         Pedido pedido1 = new Pedido();
         pedido1.setId(1);
